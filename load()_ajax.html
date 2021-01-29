@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        //load() method is to load some data from the server,
+        //and to put the returned data,
+        //into some selected element. 
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#div1").load("Test.txt");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <h2>JQuery-AJAX allows for changing of this text. Click on the button to see for yourself.</h2>
+    </div>
+    <button>Load content from an external text file.</button><br><br>
+
+</body>
+
+</html>
